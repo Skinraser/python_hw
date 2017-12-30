@@ -5,7 +5,7 @@ def triangle_square_and_perimeter(a, b):
     triangle_square = (1/2)*a*b
     c = math.sqrt(b**2 + a**2)
     triangle_perimeter = a + b + c
-    return triangle_perimeter, triangle_square
+    return triangle_square, triangle_perimeter
 
 
 square_and_perimeter = triangle_square_and_perimeter(5, 6)
