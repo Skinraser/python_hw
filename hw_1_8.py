@@ -1,14 +1,11 @@
 # В одномерном списке поменять местами минимальный и максимальный элементы. Остальные оставить на своих местах.
-lst = [i for i in range(10)]
+lst = [2, 1, 3, 8]
 
 
 def change_min_and_max(lst):
-    lst.insert(max(lst), min(lst))
-    lst.insert(min(lst), max(lst))
-    lst.remove(min(lst))
-    lst.reverse()
-    lst.remove(max(lst))
-    lst.reverse()
+    maximum = lst.index(max(lst))
+    minimum = lst.index(min(lst))
+    lst[maximum], lst[minimum] = lst[minimum], lst[maximum]
     return lst
 
 
