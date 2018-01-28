@@ -7,9 +7,8 @@ lst1 = []
 
 
 def normalize_lst(list):
-    for elem in lst:
-        elem = elem / abs(max(lst, key=lambda elem : abs(elem)))
-        lst1.append(elem)
+    maximum = abs(max(lst, key=lambda elem : abs(elem)))
+    lst1 = [elem / maximum for elem in lst]
     return lst, lst1
 
 
