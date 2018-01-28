@@ -6,8 +6,6 @@ def multiple_of_uneven(number):
     for i in number:
         if int(i) % 2 == 1:
             result *= int(i)
-        else:
-            continue
     return result
 
 

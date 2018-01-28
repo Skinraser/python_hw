@@ -11,8 +11,8 @@ def is_isogram(string):
         elif ' ' in string:
             continue
         elif i in lst:
-            return 'This string is not an isogram'
-    return 'This string is an isogram'
+            return False
+    return True
 
 
 print(is_isogram(input()))
